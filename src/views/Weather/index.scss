@@ -1,0 +1,101 @@
+$body_color: #ededed;
+$WeatherCard_shadow_color: #999999;
+$WeatherCard_color: #f9f9f9;
+$Location_color: #212121;
+$component_color: #828282;
+$Temperature_color: #757575;
+
+body {
+  background-color: $body_color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.WeatherCard {
+  position: relative;
+  min-width: 360px;
+  box-shadow: 0 1px 3px 0 $WeatherCard_shadow_color;
+  background-color: $WeatherCard_color;
+  box-sizing: border-box;
+  padding: 30px 15px;
+}
+
+.PageChange {
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.Location {
+  font-size: 28px;
+  color: $Location_color;
+  margin-bottom: 20px;
+}
+
+.Description {
+  font-size: 16px;
+  color: $component_color;
+  margin-bottom: 30px;
+}
+
+.CurrentWeather {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.Temperature {
+  color: $Temperature_color;
+  font-size: 96px;
+  font-weight: 300;
+  display: flex;
+}
+
+.Celsius {
+  font-weight: normal;
+  font-size: 42px;
+}
+
+.AirFlow {
+  display: flex;
+  align-items: center;
+  font-size: 16x;
+  font-weight: 300;
+  color: $component_color;
+  margin-bottom: 20px;
+}
+
+.Rain {
+  display: flex;
+  align-items: center;
+  font-size: 16x;
+  font-weight: 300;
+  color: $component_color;
+}
+
+.Refresh {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: flex-end;
+  color: $component_color;
+}
+
+.img_svg {
+  width: 25px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.img_Refrsh {
+  margin: left 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}

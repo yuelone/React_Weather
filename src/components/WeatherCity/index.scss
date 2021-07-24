@@ -1,0 +1,85 @@
+$CityPage_box-Shadow_one: rgba(12, 12, 13, 0.2);
+$CityPage_box-Shadow_two: rgba(0, 0, 0, 0.15);
+$CityPage_backgroud_color: #1f2022;
+$Title_color: #f9f9fa;
+$public_color: #cccccc;
+$btn_save_color: white;
+$btn_save_backgroud_color: #40a9f3;
+
+.CityPage {
+  position: relative;
+  min-width: 360px;
+  box-shadow: 0 1px 4px 0 $CityPage_box-Shadow_one,
+    0 0 0 1px $CityPage_box-Shadow_two;
+  background-color: $CityPage_backgroud_color;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.Title {
+  font-size: 28px;
+  color: $Title_color;
+  margin-bottom: 30px;
+}
+
+.Label {
+  display: block;
+  font-size: 16px;
+  color: $public_color;
+  margin-bottom: 15px;
+}
+
+.Select {
+  display: block;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid $public_color;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  color: $public_color;
+  font-size: 16px;
+  padding: 7px 10px;
+  margin-bottom: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.btn_Group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  margin: 0;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  cursor: pointer;
+  overflow: visible;
+  text-transform: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn_back {
+  color: $public_color;
+  border-color: $public_color;
+  display: flex;
+}
+
+.btn_save {
+  color: white;
+  background-color: $btn_save_backgroud_color;
+}
